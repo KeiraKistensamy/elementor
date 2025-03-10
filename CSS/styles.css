@@ -1,0 +1,29 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;  /* Enables Flexbox */
+    justify-content: space-between; /* Space between logo and menu icon */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 30px;
+    background-color: white;
+    width: 100%; /* Full width */
+    height: 80px; /* Adjust as needed */
+}
+
+/* Logo Styling */
+.logo img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
