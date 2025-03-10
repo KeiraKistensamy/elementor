@@ -13,17 +13,354 @@
     padding: 10px 30px;
     background-color: white;
     width: 100%; /* Full width */
-    height: 80px; /* Adjust as needed */
+    height: 123px; /* Adjust as needed */
 }
 
 /* Logo Styling */
 .logo img {
-    width: 150px; /* Adjust as needed */
-    height: auto;
+    width: 200px; /* Adjust as needed */
+    /* height: 100px; */
+    margin-left: 100px;
 }
 
 /* Menu Icon */
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
+    margin-right: 115px;
+}
+
+
+/* carousel */
+
+/* Slider container */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px; /* Adjust width */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slide image */
+.slide img {
+    width: 1155px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+/* Blue overlay with text */
+.overlay {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    background-color: #244ac2; /* Blue overlay */
+    color: white;
+    padding:30px 150px;
+    font-size: 19px;
+    font-weight: 100;
+    font-family: sans-serif;
+    transform: translateY(-50%);
+}
+
+/* Next button */
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    /* max-width: 900px; */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;  /* Aligns text and image vertically */
+    justify-content: flex-start;  /* Aligns items to the start */
+    width: 100%;  /* Full width */
+    max-width: 1200px;  /* Limits width on large screens */
+    margin: 0 auto;  /* Centers the container */
+}
+
+.intro {
+    font-size: 17px;
+    color: #333;
+    /* margin-bottom: 30px; */
+    width: 80%;  /* Increased width for more space */
+    padding: 70px 0;  /* Adds spacing */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.intro-image {
+    width: 300px;
+    height: auto;
+    margin-left: 220px;
+    margin-bottom: 160px;
+}
+
+/* 3columns */
+
+/* Container that holds all columns */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Space between main columns */
+    margin: 20px;
+}
+
+/* General column styling */
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+}
+
+/* Box styling for all boxes */
+.box {
+    background-color: #0a1f2c;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    height: 150px;
+}
+
+/* Sub-columns inside each column */
+.sub-columns {
+    display: flex;
+    gap: 20px; /* Space between sub-columns */
+    margin-top: 20px;
+}
+
+.box2 {
+    background-color: #244ac2;
+    color: white;
+    /* padding: 20px; */
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    height: 25px;
+}
+
+/* Styling for each sub-column */
+.sub-column {
+    flex: 1; /* Equal width for each sub-column */
+}
+
+h3 {
+    margin-right: 50px;
+}
+
+.greater {
+    margin-right: 200px;
+}
+
+.yes {
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subs{
+    text-align: left;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subs span {
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries */
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+/* 
+    .overlay {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    } */
+    .overlay {
+        font-size: 16px;
+        padding: 15px 30px;
+        width: 90%;
+    }
+    .container {
+        margin: 20px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .intro {
+        width: 100%;
+        padding: 20px;
+    } */
+
+    .intro-image {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sub-columns {
+        display: flex;
+        justify-content: center; /* Centers the boxes */
+        gap: 10px; /* Adds spacing between the boxes */
+        flex-wrap: wrap; /* Allows wrapping if needed */
+    }
+    
+    .box2 {
+        width: 100%; /* Makes them fit next to each other */
+        height: 40px;
+        text-align: center;
+    }    
+    .box{
+        height: 150px;
+    }
+    .box,
+    .box2 {
+        font-size: 14px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .subs {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    h3 {
+        margin-right: 0;
+    }
+
+    .greater {
+        margin-right: 400px;
+        height: 50px;
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .logo img {
+        width: 180px;
+        margin-left: 20px;
+    }
+
+    .menu-icon {
+        margin-right: 20px;
+    }
+
+    .slide img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .overlay {
+        padding: 20px 50px;
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 50px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        width: 90%;
+        padding: 50px 20px;
+    }
+
+    .intro-image {
+        width: 70%;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .container2 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sub-columns {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .box,
+    .box2 {
+        font-size: 16px;
+        /* height: auto; */
+        padding: 20px;
+    }
+    
+    .box{
+        height: 130px;
+    }
+
+    .box2{
+        height: 70px;
+    }
+
+    .subs {
+        font-size: 14px;
+    }
+}
+
+/* Large screens (above 1024px) */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
