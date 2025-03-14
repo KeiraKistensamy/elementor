@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Lead Text -->
-    <link rel="stylesheet" href="https://your-font-cdn.com/lead.css">
-    <!-- Thin font -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="CSS/styles.css">
     <title>keiraVISIO</title>
 </head>
@@ -23,15 +24,48 @@
 </header>
 
 <body>
+    
+    <div class="carousel-container">
 
-    <div class="carousel">
-        <div class="slide">
-            <img src="images/sergey-pesterev-FRMt.png" alt="CarImage">
-            <div class="overlay">
-                <p>Look beyond the ordinary</p>
+        <!-- black box -->
+         <div class="black-box"></div>
+        <div class="carousel">
+            <div class="slide active">
+                <img src="images/sergey-pesterev-FRMt.png" alt="CarImage">
+                <div class="overlay">
+                    <p>Look beyond the ordinary</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/pic1.jpeg" alt="CarImage">
+                <div class="overlay">
+                    <p>Explore new roads</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/pic4.jpeg" alt="CarImage">
+                <div class="overlay">
+                    <p>Adventure awaits</p>
+                </div>
             </div>
         </div>
-        <button class="next-btn">&#10095;</button>
+
+        <!-- Next Button -->
+        <button class="next-btn"><img src="images/right2.png" loading="lazy"></button>
+
+        <!-- Active and Inactive Indicators under the arrow -->
+<!-- Next Button and Indicators -->
+<div class="button-indicator-container">
+    <div class="carousel-indicators">
+        <img src="images/active.png">
+        <img src="images/inactive.png">
+        <img src="images/inactive.png">
+        <img src="images/inactive.png">
+    </div>
+    <button class="next-btn"><img src="images/right2.png" loading="lazy"></button>
+</div>
+
+
     </div>
 
     <div class="container">
@@ -107,7 +141,8 @@
         </div>
         
     </div>
-    
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
