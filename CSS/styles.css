@@ -86,7 +86,7 @@
 .slide img {
     width: 1155px;
     height: 500px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 /* Blue overlay with text */
@@ -128,7 +128,7 @@
 /* Next Button */
 .next-btn {
     position: absolute;
-    right: 8%;
+    right: 4%;
     top: 50%;
     width: 60px;
     height: 60px;
@@ -337,9 +337,6 @@ h3 {
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: row;
-        /* justify-content: space-around; */
-        /* padding-left: 100px;
-        padding-right: 100px; */
         height: auto;
         padding: 10px;
     }
@@ -392,7 +389,26 @@ h3 {
         height: 400px;
         overflow: hidden;
     }
+    /* Style for carousel indicators (adjust position) */
+    .carousel-indicators {
+        position: absolute;
+        top: 10px; /* Place indicators near the top of the carousel image */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10; /* Ensure the indicators are above the image */
+    }
 
+    .carousel-indicators img {
+        width: 25px;
+        height: 25px;
+    }
+    .next-btn img{
+        width: 50%;
+        height: 50%;
+    }
     .sub-columns {
         display: flex;
         justify-content: center; /* Centers the boxes */
@@ -513,7 +529,7 @@ h3 {
     /* Adjust columns for better spacing */
     .container2 {
         flex-direction: column; /* Stack elements */
-        gap: 10px;
+        gap: 5px;
     }
 
     .box {
